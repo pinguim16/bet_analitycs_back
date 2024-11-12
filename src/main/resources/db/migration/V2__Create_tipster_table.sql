@@ -1,8 +1,8 @@
 CREATE TABLE tipster
 (
-    id       BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name     VARCHAR(255) NOT NULL,
-    bingos   DOUBLE,
-    sport_id BIGINT,
-    CONSTRAINT fk_sport FOREIGN KEY (sport_id) REFERENCES sport (id)
+    bingos   DOUBLE PRECISION NOT NULL,
+    sport_id BIGINT       NOT NULL,
+    CONSTRAINT fk_sport_tipster FOREIGN KEY (sport_id) REFERENCES sport (id) ON DELETE CASCADE
 );

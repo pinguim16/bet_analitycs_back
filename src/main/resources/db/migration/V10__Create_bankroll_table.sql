@@ -1,0 +1,6 @@
+CREATE TABLE bankroll
+(
+    id    SERIAL PRIMARY KEY,
+    name  VARCHAR(255)     NOT NULL,
+    total DOUBLE PRECISION NOT NULL DEFAULT 0
+);

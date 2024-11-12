@@ -1,4 +1,4 @@
-CREATE TABLE sport
+CREATE TABLE bet_type
 (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
